@@ -28,8 +28,7 @@ export class WeatherPage {
   getQuery(){
     this.weatherService.searchCities(this.searchStr)
       .subscribe(res => {
-        console.log(res);
-        //this.results = res.RESULTS;
+        this.results = res.RESULTS;
       });
   }
 
